@@ -1,0 +1,39 @@
+<div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Create New Stock Exchange</h6>
+    <div class="media text-muted pt-3">
+        <!-- <button style="margin-left:10px;" [routerLink]="['/adminmenu/','addcompany']" type="button" class="btn btn-primary">Add User</button>  -->
+         
+    </div>
+    <div class="media text-muted pt-4">
+        <form [formGroup]="stockExchangeForm" (ngSubmit)="onSubmit(stockExchangeForm.value)" >
+            <div class="form-group row">
+                <label class="col-sm-7 col-form-label" for="inputStockExchange">Stock Exchange</label>
+                <div class="col-sm-5">
+                    <input required type="text" class="form-control" id="inputStockExchange" formControlName="stockexchange" >
+                </div>
+              </div>
+              
+                  <div class="form-group row">
+                      <label  class="col-sm-7 col-form-label" for="inputBriefDescription">Brief Description</label>
+                      <div class="col-sm-5">
+                      <input required type="text" class="form-control" id="inputBriefDescription" formControlName="briefdescription" >
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                      <label  class="col-sm-7 col-form-label" for="inputContactAddress">Contact Address</label>
+                      <div class="col-sm-5">
+                      <input required type="text" class="form-control" id="inputContactAddress" formControlName="contactaddress" >
+                    </div>
+                  </div>
+                    <!-- <div class="form-group row">
+                        <label  class="col-sm-7 col-form-label" for="inputIPODate">IPO Date</label>
+                        <div class="col-sm-5">
+                        <input required type="date" class="form-control" id="inputIPODate" formControlName="ipodate" >
+                      </div>
+                      </div> -->
+             
+           
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+</div>

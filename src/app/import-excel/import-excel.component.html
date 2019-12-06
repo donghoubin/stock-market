@@ -1,0 +1,12 @@
+<div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Import Excel</h6>
+    <div class="media text-muted pt-3">
+        <input type="file" ng2FileSelect [uploader]="uploader" (change)="selectedFileOnChanged($event)" />
+        <button style="margin-left:10px;" (click)="uploadfile()" type="button" class="btn btn-primary">Upload</button>
+ 
+         
+    </div>
+    <div class="media text-muted pt-3">
+        <a style="font-size: 20px;" href="http://localhost:8081/upload/filedownload">Click Here to download sample Excel file</a>         
+    </div>
+</div>

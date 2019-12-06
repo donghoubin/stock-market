@@ -1,0 +1,35 @@
+<div class="my-3 p-3 bg-white rounded shadow-sm">
+  <h6 class="border-bottom border-gray pb-2 mb-0">Summary of Upload</h6>
+  <div class="media text-muted pt-3">
+  
+    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+      <strong class="d-block text-gray-dark">Company Name</strong>
+     {{companyName}}
+    </p>
+  </div>
+  <div class="media text-muted pt-3">
+    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+      <strong class="d-block text-gray-dark">Stock Exchange</strong>
+      {{stockExchangeName}}
+    </p>
+  </div>
+  <div class="media text-muted pt-3">
+    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+      <strong class="d-block text-gray-dark">Number of Records Imported</strong>
+      {{totalImportedNumber}}
+    </p>
+  </div>
+  <div class="media text-muted pt-3">
+    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+      <strong class="d-block text-gray-dark">From Date</strong>
+      {{startTime}}
+    </p>
+    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+      <strong class="d-block text-gray-dark">To Date</strong>
+      {{endTime}}
+    </p>
+  </div>
+  <small class="d-block text-right mt-3">
+    <button style="margin-left:10px;" (click)="confirmUploaded()" type="button" class="btn btn-primary">OK</button>
+  </small>
+</div>

@@ -1,0 +1,31 @@
+<div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h6 class="border-bottom border-gray pb-2 mb-0">List of IPO detail</h6>
+    <div class="media text-muted pt-3">
+         
+    </div>
+    <div class="media text-muted pt-3">
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">companyName</th>
+                <th scope="col">stockExchange</th>
+                <th scope="col">pricePerShare</th>
+                <th scope="col">totalShares</th>
+                <th scope="col">openDate</th>
+                <th scope="col">remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of items">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.companyName}}</td>
+                <td>{{item.stockExchange}}</td>
+                <td>{{item.pricePerShare}}</td>
+                <td>{{item.totalShares}}</td>
+                <td>{{item.openDate | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+                <td>{{item.remarks}}</td>
+            </tbody>
+          </table>       
+    </div>
+</div>
