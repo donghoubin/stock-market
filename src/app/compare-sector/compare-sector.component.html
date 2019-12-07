@@ -1,0 +1,46 @@
+
+    <form [formGroup]="companycompareForm" (ngSubmit)="onSubmit(companycompareForm.value)" class="form-group">
+        <div class="form-group row">  
+      <label for="sel1" class="col-sm-2 col-form-label">Select Sector:</label>
+        <select  formControlName="choosecompany" class="form-control col-sm-5" id="sel1">
+          <option *ngFor="let item of items" value="{{item.id}}">{{item.companyName}}</option>
+       
+        </select>
+       
+      </div>
+      <div class="form-group row">
+        <label for="usr"  class="col-sm-2 col-form-label">From period:</label>
+        <input type="date" formControlName="fromperiod" class="form-control col-sm-5" id="usr">
+      </div>
+      <div class="form-group row">
+          <label for="usr1"  class="col-sm-2 col-form-label">To period:</label>
+          <input type="date" formControlName="toperiod" class="form-control col-sm-5" id="usr1">
+        </div>
+        <div class="form-group row">  
+            <label for="sel2" class="col-sm-2 col-form-label">Specify Periodicity:</label>
+              <select formControlName="periodicity" class="form-control col-sm-5" id="sel2">
+                <option value="1">Week</option>
+                <option value="2">Month</option>
+                <option value="3">Quater</option>
+                <option value="4">Year</option>
+              </select>
+            </div>
+            <div class="form-group row">  
+            <button type="button" class=" col-sm-7 btn btn-primary" (click)="showCompany()">Compare with</button>
+            </div>
+            <div class="form-group row" *ngIf="isShow">  
+               
+                <label for="sel3" class="col-sm-2 col-form-label"> Select Sector:  </label>
+                  <select required  formControlName="chooseothercompany" class="form-control col-sm-5" id="sel3">
+                    <option *ngFor="let item of items" value="{{item.id}}">{{item.companyName}}</option>
+                 
+                  </select>
+                 
+                </div>
+        <div class="form-group row">  
+            <button type="submit" class=" col-sm-7 btn btn-primary">Generate Map</button>    
+           
+            </div>
+           
+          </form>
+    <div echarts [options]="chartOption" class="demo-chart"></div>

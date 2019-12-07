@@ -25,6 +25,9 @@ import { EditIpoComponent } from './edit-ipo/edit-ipo.component';
 import { UserRegisterComponent } from './user-register/user-register.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { IpoListComponent } from './ipo-list/ipo-list.component';
+import { CompareCompanyComponent } from './compare-company/compare-company.component';
+import { NgxEchartsModule } from 'ngx-echarts';
+import { CompareSectorComponent } from './compare-sector/compare-sector.component';
 
 @NgModule({
    declarations: [
@@ -45,7 +48,9 @@ import { IpoListComponent } from './ipo-list/ipo-list.component';
       EditIpoComponent,
       UserRegisterComponent,
       EditUserComponent,
-      IpoListComponent
+      IpoListComponent,
+      CompareCompanyComponent,
+      CompareSectorComponent
    ],
    imports: [
       BrowserModule,
@@ -54,6 +59,7 @@ import { IpoListComponent } from './ipo-list/ipo-list.component';
       BrowserAnimationsModule,
       AppRoutingModule,
       FileUploadModule,
+      NgxEchartsModule,
       ToastrModule.forRoot()
    ],
    providers: [],

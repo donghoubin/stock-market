@@ -17,7 +17,8 @@ import { EditIpoComponent } from './edit-ipo/edit-ipo.component';
 import { UserRegisterComponent } from './user-register/user-register.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { IpoListComponent } from './ipo-list/ipo-list.component';
-
+import { CompareCompanyComponent } from './compare-company/compare-company.component';
+import { CompareSectorComponent } from './compare-sector/compare-sector.component';
 const routes: Routes = [
         {path:'',component:LoginComponent},
          {path: 'adminmenu',component: AdminMenuComponent,
@@ -34,7 +35,9 @@ const routes: Routes = [
                     {path:'editipo',component: EditIpoComponent}]},
           {path: 'usermenu', component: UserMenuComponent,
           children:[{path:'edituser',component: EditUserComponent},
-                     {path:'ipolist',component: IpoListComponent}]},
+                     {path:'ipolist',component: IpoListComponent},
+                     {path:'comparecompany',component: CompareCompanyComponent},
+                     {path:'comparesector',component: CompareSectorComponent}]},
           {path: 'userregister', component: UserRegisterComponent}
 ];
 
