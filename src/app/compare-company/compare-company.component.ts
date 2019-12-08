@@ -256,7 +256,7 @@ export class CompareCompanyComponent implements OnInit {
         });
 
  
-    this.companycompareForm.reset();
+  //  this.companycompareForm.reset();
   }
 
   showCompany(){
