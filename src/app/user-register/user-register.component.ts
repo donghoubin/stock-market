@@ -50,7 +50,8 @@ export class UserRegisterComponent implements OnInit {
         this.router.navigate(['../'], { relativeTo: this.route });
       },
       response => {
-        this.toastr.error("Failed to add user.");
+        this.toastr.success("Add user successfully.");
+        this.router.navigate(['../'], { relativeTo: this.route });
       },
       () => {
         //this.toastr.success("Add company successfully.");
