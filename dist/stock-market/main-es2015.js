@@ -88,6 +88,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/compare-company/compare-company.component.html":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/compare-company/compare-company.component.html ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n    <form [formGroup]=\"companycompareForm\" (ngSubmit)=\"onSubmit(companycompareForm.value)\" class=\"form-group\">\n        <div class=\"form-group row\">  \n      <label for=\"sel1\" class=\"col-sm-2 col-form-label\">Select Company:</label>\n        <select  formControlName=\"choosecompany\" class=\"form-control col-sm-5\" id=\"sel1\">\n          <option *ngFor=\"let item of items\" value=\"{{item.id}}\">{{item.companyName}}</option>\n       \n        </select>\n       \n      </div>\n      <div class=\"form-group row\">\n        <label for=\"usr\"  class=\"col-sm-2 col-form-label\">From period:</label>\n        <input type=\"date\" formControlName=\"fromperiod\" class=\"form-control col-sm-5\" id=\"usr\">\n      </div>\n      <div class=\"form-group row\">\n          <label for=\"usr1\"  class=\"col-sm-2 col-form-label\">To period:</label>\n          <input type=\"date\" formControlName=\"toperiod\" class=\"form-control col-sm-5\" id=\"usr1\">\n        </div>\n        <div class=\"form-group row\">  \n            <label for=\"sel2\" class=\"col-sm-2 col-form-label\">Specify Periodicity:</label>\n              <select formControlName=\"periodicity\" class=\"form-control col-sm-5\" id=\"sel2\">\n                <option value=\"1\">Week</option>\n                <option value=\"2\">Month</option>\n                <option value=\"3\">Quater</option>\n                <option value=\"4\">Year</option>\n              </select>\n            </div>\n            <div class=\"form-group row\">  \n            <button type=\"button\" class=\" col-sm-7 btn btn-primary\" (click)=\"showCompany()\">Compare with</button>\n            </div>\n            <div class=\"form-group row\" *ngIf=\"isShow\">  \n               \n                <label for=\"sel3\" class=\"col-sm-2 col-form-label\"> Select company:  </label>\n                  <select required  formControlName=\"chooseothercompany\" class=\"form-control col-sm-5\" id=\"sel3\">\n                    <option *ngFor=\"let item of items\" value=\"{{item.id}}\">{{item.companyName}}</option>\n                 \n                  </select>\n                 \n                </div>\n        <div class=\"form-group row\">  \n            <button type=\"submit\" class=\" col-sm-7 btn btn-primary\">Generate Map</button>    \n           \n            </div>\n           \n          </form>\n    <div echarts [options]=\"chartOption\" class=\"demo-chart\"></div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/compare-sector/compare-sector.component.html":
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/compare-sector/compare-sector.component.html ***!
+  \****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n    <form [formGroup]=\"companycompareForm\" (ngSubmit)=\"onSubmit(companycompareForm.value)\" class=\"form-group\">\n        <div class=\"form-group row\">  \n      <label for=\"sel1\" class=\"col-sm-2 col-form-label\">Select Sector:</label>\n        <select  formControlName=\"choosecompany\" class=\"form-control col-sm-5\" id=\"sel1\">\n          <option *ngFor=\"let item of items\" value=\"{{item.id}}\">{{item.companyName}}</option>\n       \n        </select>\n       \n      </div>\n      <div class=\"form-group row\">\n        <label for=\"usr\"  class=\"col-sm-2 col-form-label\">From period:</label>\n        <input type=\"date\" formControlName=\"fromperiod\" class=\"form-control col-sm-5\" id=\"usr\">\n      </div>\n      <div class=\"form-group row\">\n          <label for=\"usr1\"  class=\"col-sm-2 col-form-label\">To period:</label>\n          <input type=\"date\" formControlName=\"toperiod\" class=\"form-control col-sm-5\" id=\"usr1\">\n        </div>\n        <div class=\"form-group row\">  \n            <label for=\"sel2\" class=\"col-sm-2 col-form-label\">Specify Periodicity:</label>\n              <select formControlName=\"periodicity\" class=\"form-control col-sm-5\" id=\"sel2\">\n                <option value=\"1\">Week</option>\n                <option value=\"2\">Month</option>\n                <option value=\"3\">Quater</option>\n                <option value=\"4\">Year</option>\n              </select>\n            </div>\n            <div class=\"form-group row\">  \n            <button type=\"button\" class=\" col-sm-7 btn btn-primary\" (click)=\"showCompany()\">Compare with</button>\n            </div>\n            <div class=\"form-group row\" *ngIf=\"isShow\">  \n               \n                <label for=\"sel3\" class=\"col-sm-2 col-form-label\"> Select Sector:  </label>\n                  <select required  formControlName=\"chooseothercompany\" class=\"form-control col-sm-5\" id=\"sel3\">\n                    <option *ngFor=\"let item of items\" value=\"{{item.id}}\">{{item.companyName}}</option>\n                 \n                  </select>\n                 \n                </div>\n        <div class=\"form-group row\">  \n            <button type=\"submit\" class=\" col-sm-7 btn btn-primary\">Generate Map</button>    \n           \n            </div>\n           \n          </form>\n    <div echarts [options]=\"chartOption\" class=\"demo-chart\"></div>\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/edit-company/edit-company.component.html":
 /*!************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/edit-company/edit-company.component.html ***!
@@ -240,7 +266,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg fixed-top navbar-dark bg-dark\">\n    <a class=\"navbar-brand mr-auto mr-lg-0\" [routerLink]=\"['/adminmenu/']\">Stock Market</a>\n    <button class=\"navbar-toggler p-0 border-0\" type=\"button\" (click)=\"changeMenu()\" data-toggle=\"offcanvas\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n    <div class=\"navbar-collapse offcanvas-collapse\" id=\"navbarsExampleDefault\">\n      <ul class=\"navbar-nav mr-auto\">\n          <li class=\"nav-item \">\n              <a class=\"nav-link\" [routerLink]=\"['/usermenu/','ipolist']\">IPOs <span class=\"sr-only\">(current)</span></a>\n            </li>\n            <li class=\"nav-item\">\n                <a class=\"nav-link\">Compare Company</a>\n              </li>\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" >Compare Sectors</a>\n              </li>\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" [routerLink]=\"['/usermenu/','edituser']\">Edit User</a>\n              </li>\n              <!-- <li class=\"nav-item\">\n                <a class=\"nav-link\" >other</a>\n              </li>    -->\n      </ul>\n      <button class=\"btn btn-outline-success my-2 my-sm-0\"  [routerLink]=\"['']\"type=\"button\">Logout</button>\n    </div>\n  </nav>\n  <main role=\"main\" class=\"container\">\n      <div class=\"d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm\">\n   \n        </div>\n      \n          <router-outlet ></router-outlet>\n  \n      <!-- <div class=\"d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm\">\n          <img class=\"mr-3\" src=\"{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/brand/bootstrap-outline.svg\" alt=\"\" width=\"48\" height=\"48\">\n          <div class=\"lh-100\">\n            <h6 class=\"mb-0 text-white lh-100\">Bootstrap</h6>\n            <small>Since 2011</small>\n          </div>\n        </div> -->\n   \n  </main>\n  ");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg fixed-top navbar-dark bg-dark\">\n    <a class=\"navbar-brand mr-auto mr-lg-0\" [routerLink]=\"['/adminmenu/']\">Stock Market</a>\n    <button class=\"navbar-toggler p-0 border-0\" type=\"button\" (click)=\"changeMenu()\" data-toggle=\"offcanvas\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n    <div class=\"navbar-collapse offcanvas-collapse\" id=\"navbarsExampleDefault\">\n      <ul class=\"navbar-nav mr-auto\">\n          <li class=\"nav-item \">\n              <a class=\"nav-link\" [routerLink]=\"['/usermenu/','ipolist']\">IPOs <span class=\"sr-only\">(current)</span></a>\n            </li>\n            <li class=\"nav-item\">\n                <a class=\"nav-link\" [routerLink]=\"['/usermenu/','comparecompany']\">Compare Company</a>\n              </li>\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" [routerLink]=\"['/usermenu/','comparesector']\">Compare Sectors</a>\n              </li>\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" [routerLink]=\"['/usermenu/','edituser']\">Edit User</a>\n              </li>\n              <!-- <li class=\"nav-item\">\n                <a class=\"nav-link\" >other</a>\n              </li>    -->\n      </ul>\n      <button class=\"btn btn-outline-success my-2 my-sm-0\"  [routerLink]=\"['']\"type=\"button\">Logout</button>\n    </div>\n  </nav>\n  <main role=\"main\" class=\"container\">\n      <div class=\"d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm\">\n   \n        </div>\n      \n          <router-outlet ></router-outlet>\n  \n      <!-- <div class=\"d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm\">\n          <img class=\"mr-3\" src=\"{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/brand/bootstrap-outline.svg\" alt=\"\" width=\"48\" height=\"48\">\n          <div class=\"lh-100\">\n            <h6 class=\"mb-0 text-white lh-100\">Bootstrap</h6>\n            <small>Since 2011</small>\n          </div>\n        </div> -->\n   \n  </main>\n  ");
 
 /***/ }),
 
@@ -847,6 +873,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _user_register_user_register_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./user-register/user-register.component */ "./src/app/user-register/user-register.component.ts");
 /* harmony import */ var _edit_user_edit_user_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./edit-user/edit-user.component */ "./src/app/edit-user/edit-user.component.ts");
 /* harmony import */ var _ipo_list_ipo_list_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./ipo-list/ipo-list.component */ "./src/app/ipo-list/ipo-list.component.ts");
+/* harmony import */ var _compare_company_compare_company_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./compare-company/compare-company.component */ "./src/app/compare-company/compare-company.component.ts");
+/* harmony import */ var _compare_sector_compare_sector_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./compare-sector/compare-sector.component */ "./src/app/compare-sector/compare-sector.component.ts");
+
+
 
 
 
@@ -883,7 +913,9 @@ const routes = [
             { path: 'editipo', component: _edit_ipo_edit_ipo_component__WEBPACK_IMPORTED_MODULE_16__["EditIpoComponent"] }] },
     { path: 'usermenu', component: _user_menu_user_menu_component__WEBPACK_IMPORTED_MODULE_5__["UserMenuComponent"],
         children: [{ path: 'edituser', component: _edit_user_edit_user_component__WEBPACK_IMPORTED_MODULE_18__["EditUserComponent"] },
-            { path: 'ipolist', component: _ipo_list_ipo_list_component__WEBPACK_IMPORTED_MODULE_19__["IpoListComponent"] }] },
+            { path: 'ipolist', component: _ipo_list_ipo_list_component__WEBPACK_IMPORTED_MODULE_19__["IpoListComponent"] },
+            { path: 'comparecompany', component: _compare_company_compare_company_component__WEBPACK_IMPORTED_MODULE_20__["CompareCompanyComponent"] },
+            { path: 'comparesector', component: _compare_sector_compare_sector_component__WEBPACK_IMPORTED_MODULE_21__["CompareSectorComponent"] }] },
     { path: 'userregister', component: _user_register_user_register_component__WEBPACK_IMPORTED_MODULE_17__["UserRegisterComponent"] }
 ];
 let AppRoutingModule = class AppRoutingModule {
@@ -980,6 +1012,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _user_register_user_register_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./user-register/user-register.component */ "./src/app/user-register/user-register.component.ts");
 /* harmony import */ var _edit_user_edit_user_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./edit-user/edit-user.component */ "./src/app/edit-user/edit-user.component.ts");
 /* harmony import */ var _ipo_list_ipo_list_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./ipo-list/ipo-list.component */ "./src/app/ipo-list/ipo-list.component.ts");
+/* harmony import */ var _compare_company_compare_company_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./compare-company/compare-company.component */ "./src/app/compare-company/compare-company.component.ts");
+/* harmony import */ var ngx_echarts__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ngx-echarts */ "./node_modules/ngx-echarts/fesm2015/ngx-echarts.js");
+/* harmony import */ var _compare_sector_compare_sector_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./compare-sector/compare-sector.component */ "./src/app/compare-sector/compare-sector.component.ts");
+
+
+
 
 
 
@@ -1029,7 +1067,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _edit_ipo_edit_ipo_component__WEBPACK_IMPORTED_MODULE_23__["EditIpoComponent"],
             _user_register_user_register_component__WEBPACK_IMPORTED_MODULE_24__["UserRegisterComponent"],
             _edit_user_edit_user_component__WEBPACK_IMPORTED_MODULE_25__["EditUserComponent"],
-            _ipo_list_ipo_list_component__WEBPACK_IMPORTED_MODULE_26__["IpoListComponent"]
+            _ipo_list_ipo_list_component__WEBPACK_IMPORTED_MODULE_26__["IpoListComponent"],
+            _compare_company_compare_company_component__WEBPACK_IMPORTED_MODULE_27__["CompareCompanyComponent"],
+            _compare_sector_compare_sector_component__WEBPACK_IMPORTED_MODULE_29__["CompareSectorComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -1038,6 +1078,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
             ng2_file_upload__WEBPACK_IMPORTED_MODULE_13__["FileUploadModule"],
+            ngx_echarts__WEBPACK_IMPORTED_MODULE_28__["NgxEchartsModule"],
             ngx_toastr__WEBPACK_IMPORTED_MODULE_4__["ToastrModule"].forRoot()
         ],
         providers: [],
@@ -1046,6 +1087,559 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         ]
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/compare-company/compare-company.component.css":
+/*!***************************************************************!*\
+  !*** ./src/app/compare-company/compare-company.component.css ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".demo-chart {\r\n    height: 400px;\r\n    }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcGFyZS1jb21wYW55L2NvbXBhcmUtY29tcGFueS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiIiwiZmlsZSI6InNyYy9hcHAvY29tcGFyZS1jb21wYW55L2NvbXBhcmUtY29tcGFueS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmRlbW8tY2hhcnQge1xyXG4gICAgaGVpZ2h0OiA0MDBweDtcclxuICAgIH0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/compare-company/compare-company.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/compare-company/compare-company.component.ts ***!
+  \**************************************************************/
+/*! exports provided: CompareCompanyComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CompareCompanyComponent", function() { return CompareCompanyComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/fesm2015/ngx-toastr.js");
+
+
+
+
+
+let CompareCompanyComponent = class CompareCompanyComponent {
+    constructor(http, toastr, formBuilder) {
+        this.toastr = toastr;
+        this.formBuilder = formBuilder;
+        this.myAppUrl = "http://localhost:8081/companyservice/";
+        this.myHttpHead = { headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpHeaders"]({ 'token': localStorage.getItem('token') }) };
+        this.chartOption = {
+            title: {
+                text: ''
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: this.companyTitle
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: this.companyDate
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: []
+        };
+        this.http = http;
+        this.http.get(this.myAppUrl + "companies", this.myHttpHead).subscribe((data) => {
+            this.items = data;
+            //  console.log("result"+this.items);
+        });
+        this.companycompareForm = this.formBuilder.group({
+            choosecompany: '',
+            fromperiod: '',
+            toperiod: '',
+            periodicity: '1',
+            chooseothercompany: ''
+        });
+    }
+    ngOnInit() {
+        this.isShow = false;
+    }
+    onSubmit(urlData) {
+        console.log("valll+" + urlData);
+        const body = {
+            "companyId": urlData.choosecompany,
+            "startTime": urlData.fromperiod,
+            "endTime": urlData.toperiod,
+            "periodicity": urlData.periodicity
+        };
+        let companyTitleArray = [];
+        // companyTitleArray.push('邮件营销');
+        let companyDateArray = [];
+        //companyDateArray.push('周一');
+        let companySeriesArray = [];
+        let companyDataArray = [];
+        let tempCompanyTile = '';
+        // another company
+        let otherCompanyDateArray = [];
+        let tempOtherCompanyDataArray = [];
+        let otherCompanyDataArray = [];
+        //   let object= {
+        //     name:'邮件营销',
+        //     type:'line',
+        //     stack: '总量',
+        //     data:[120]
+        // } ; 
+        // companySeriesArray.push(object);
+        this.http.post(this.myAppUrl + 'companiesStockPrice', body, this.myHttpHead)
+            .subscribe((val) => {
+            for (let info in val) {
+                let tempRes = val[info];
+                tempCompanyTile = tempRes[2];
+                // companyTitleArray.push(tempRes[2]);
+                companyDateArray.push(tempRes[0]);
+                companyDataArray.push(tempRes[1]);
+                // console.log("dates:" + tempRes[0])
+                // console.log("currentPrice:" + tempRes[1])
+                // console.log("companyName:" + tempRes[2])
+            }
+            companyTitleArray.push(tempCompanyTile);
+            let object = {
+                name: companyTitleArray[0],
+                type: 'line',
+                stack: '总量',
+                data: companyDataArray
+            };
+            companySeriesArray.push(object);
+            this.companyTitle = companyTitleArray;
+            this.companyDate = companyDateArray;
+            this.companySeries = companySeriesArray;
+            this.chartOption = {
+                title: {
+                    text: ''
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                legend: {
+                    data: this.companyTitle
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                toolbox: {
+                    feature: {
+                        saveAsImage: {}
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: this.companyDate
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: this.companySeries
+            };
+            // aother company
+            let anotherCompany = urlData.chooseothercompany;
+            console.log("anotherCompany:" + anotherCompany);
+            if (anotherCompany != '') {
+                console.log("anotherCompanyin:" + anotherCompany);
+                const body1 = {
+                    "companyId": anotherCompany,
+                    "startTime": urlData.fromperiod,
+                    "endTime": urlData.toperiod,
+                    "periodicity": urlData.periodicity
+                };
+                this.http.post(this.myAppUrl + 'companiesStockPrice', body1, this.myHttpHead)
+                    .subscribe((val) => {
+                    for (let info in val) {
+                        let tempRes = val[info];
+                        tempCompanyTile = tempRes[2];
+                        otherCompanyDateArray.push(tempRes[0]);
+                        tempOtherCompanyDataArray.push(tempRes[1]);
+                    }
+                    let getDate = false;
+                    console.log("companyDateArray:" + companyDateArray);
+                    for (let originalDate in companyDateArray) {
+                        for (let otherDate in otherCompanyDateArray) {
+                            if (companyDateArray[originalDate] == otherCompanyDateArray[otherDate]) {
+                                otherCompanyDataArray.push(tempOtherCompanyDataArray[otherDate]);
+                                getDate = true;
+                            }
+                        }
+                        if (!getDate) {
+                            console.log("initail 0 :");
+                            otherCompanyDataArray.push('0');
+                        }
+                    }
+                    companyTitleArray.push(tempCompanyTile);
+                    console.log("companyTitleArray1:" + companyTitleArray);
+                    console.log("companyDateArray1:" + companyDateArray);
+                    let object = {
+                        name: companyTitleArray[1],
+                        type: 'line',
+                        stack: '总量',
+                        data: otherCompanyDataArray
+                    };
+                    companySeriesArray.push(object);
+                    console.log("companySeriesArray1:" + companySeriesArray);
+                    this.companyTitle = companyTitleArray;
+                    this.companyDate = companyDateArray;
+                    this.companySeries = companySeriesArray;
+                    this.chartOption = {
+                        title: {
+                            text: ''
+                        },
+                        tooltip: {
+                            trigger: 'axis'
+                        },
+                        legend: {
+                            data: this.companyTitle
+                        },
+                        grid: {
+                            left: '3%',
+                            right: '4%',
+                            bottom: '3%',
+                            containLabel: true
+                        },
+                        toolbox: {
+                            feature: {
+                                saveAsImage: {}
+                            }
+                        },
+                        xAxis: {
+                            type: 'category',
+                            boundaryGap: false,
+                            data: this.companyDate
+                        },
+                        yAxis: {
+                            type: 'value'
+                        },
+                        series: this.companySeries
+                    };
+                }, response => {
+                    this.toastr.error("Failed to generate map.");
+                }, () => {
+                });
+            }
+        }, response => {
+            this.toastr.error("Failed to generate map.");
+        }, () => {
+        });
+        //  this.companycompareForm.reset();
+    }
+    showCompany() {
+        console.log("show");
+        this.isShow = true;
+    }
+};
+CompareCompanyComponent.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] },
+    { type: ngx_toastr__WEBPACK_IMPORTED_MODULE_4__["ToastrService"] },
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] }
+];
+CompareCompanyComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-compare-company',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./compare-company.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/compare-company/compare-company.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./compare-company.component.css */ "./src/app/compare-company/compare-company.component.css")).default]
+    })
+], CompareCompanyComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/compare-sector/compare-sector.component.css":
+/*!*************************************************************!*\
+  !*** ./src/app/compare-sector/compare-sector.component.css ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBhcmUtc2VjdG9yL2NvbXBhcmUtc2VjdG9yLmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/compare-sector/compare-sector.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/compare-sector/compare-sector.component.ts ***!
+  \************************************************************/
+/*! exports provided: CompareSectorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CompareSectorComponent", function() { return CompareSectorComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/fesm2015/ngx-toastr.js");
+
+
+
+
+
+let CompareSectorComponent = class CompareSectorComponent {
+    constructor(http, toastr, formBuilder) {
+        this.toastr = toastr;
+        this.formBuilder = formBuilder;
+        this.myAppUrl = "http://localhost:8081/companyservice/";
+        this.myHttpHead = { headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpHeaders"]({ 'token': localStorage.getItem('token') }) };
+        this.chartOption = {
+            title: {
+                text: ''
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: this.companyTitle
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: this.companyDate
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: []
+        };
+        this.http = http;
+        this.http.get(this.myAppUrl + "companies", this.myHttpHead).subscribe((data) => {
+            this.items = data;
+            //  console.log("result"+this.items);
+        });
+        this.companycompareForm = this.formBuilder.group({
+            choosecompany: '',
+            fromperiod: '',
+            toperiod: '',
+            periodicity: '1',
+            chooseothercompany: ''
+        });
+    }
+    ngOnInit() {
+        this.isShow = false;
+    }
+    onSubmit(urlData) {
+        console.log("valll+" + urlData);
+        const body = {
+            "companyId": urlData.choosecompany,
+            "startTime": urlData.fromperiod,
+            "endTime": urlData.toperiod,
+            "periodicity": urlData.periodicity
+        };
+        let companyTitleArray = [];
+        // companyTitleArray.push('邮件营销');
+        let companyDateArray = [];
+        //companyDateArray.push('周一');
+        let companySeriesArray = [];
+        let companyDataArray = [];
+        let tempCompanyTile = '';
+        // another company
+        let otherCompanyDateArray = [];
+        let tempOtherCompanyDataArray = [];
+        let otherCompanyDataArray = [];
+        //   let object= {
+        //     name:'邮件营销',
+        //     type:'line',
+        //     stack: '总量',
+        //     data:[120]
+        // } ; 
+        // companySeriesArray.push(object);
+        this.http.post(this.myAppUrl + 'companiesStockPrice', body, this.myHttpHead)
+            .subscribe((val) => {
+            for (let info in val) {
+                let tempRes = val[info];
+                tempCompanyTile = tempRes[2];
+                // companyTitleArray.push(tempRes[2]);
+                companyDateArray.push(tempRes[0]);
+                companyDataArray.push(tempRes[1]);
+                // console.log("dates:" + tempRes[0])
+                // console.log("currentPrice:" + tempRes[1])
+                // console.log("companyName:" + tempRes[2])
+            }
+            companyTitleArray.push(tempCompanyTile);
+            let object = {
+                name: companyTitleArray[0],
+                type: 'line',
+                stack: '总量',
+                data: companyDataArray
+            };
+            companySeriesArray.push(object);
+            this.companyTitle = companyTitleArray;
+            this.companyDate = companyDateArray;
+            this.companySeries = companySeriesArray;
+            this.chartOption = {
+                title: {
+                    text: ''
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                legend: {
+                    data: this.companyTitle
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                toolbox: {
+                    feature: {
+                        saveAsImage: {}
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: this.companyDate
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: this.companySeries
+            };
+            // aother company
+            let anotherCompany = urlData.chooseothercompany;
+            console.log("anotherCompany:" + anotherCompany);
+            if (anotherCompany != '') {
+                const body1 = {
+                    "companyId": anotherCompany,
+                    "startTime": urlData.fromperiod,
+                    "endTime": urlData.toperiod,
+                    "periodicity": urlData.periodicity
+                };
+                this.http.post(this.myAppUrl + 'companiesStockPrice', body1, this.myHttpHead)
+                    .subscribe((val) => {
+                    for (let info in val) {
+                        let tempRes = val[info];
+                        tempCompanyTile = tempRes[2];
+                        otherCompanyDateArray.push(tempRes[0]);
+                        tempOtherCompanyDataArray.push(tempRes[1]);
+                    }
+                    let getDate = false;
+                    console.log("companyDateArray:" + companyDateArray);
+                    for (let originalDate in companyDateArray) {
+                        for (let otherDate in otherCompanyDateArray) {
+                            if (companyDateArray[originalDate] == otherCompanyDateArray[otherDate]) {
+                                otherCompanyDataArray.push(tempOtherCompanyDataArray[otherDate]);
+                                getDate = true;
+                            }
+                        }
+                        if (!getDate) {
+                            console.log("initail 0 :");
+                            otherCompanyDataArray.push('0');
+                        }
+                    }
+                    companyTitleArray.push(tempCompanyTile);
+                    console.log("companyTitleArray1:" + companyTitleArray);
+                    console.log("companyDateArray1:" + companyDateArray);
+                    let object = {
+                        name: companyTitleArray[1],
+                        type: 'line',
+                        stack: '总量',
+                        data: otherCompanyDataArray
+                    };
+                    companySeriesArray.push(object);
+                    console.log("companySeriesArray1:" + companySeriesArray);
+                    this.companyTitle = companyTitleArray;
+                    this.companyDate = companyDateArray;
+                    this.companySeries = companySeriesArray;
+                    this.chartOption = {
+                        title: {
+                            text: ''
+                        },
+                        tooltip: {
+                            trigger: 'axis'
+                        },
+                        legend: {
+                            data: this.companyTitle
+                        },
+                        grid: {
+                            left: '3%',
+                            right: '4%',
+                            bottom: '3%',
+                            containLabel: true
+                        },
+                        toolbox: {
+                            feature: {
+                                saveAsImage: {}
+                            }
+                        },
+                        xAxis: {
+                            type: 'category',
+                            boundaryGap: false,
+                            data: this.companyDate
+                        },
+                        yAxis: {
+                            type: 'value'
+                        },
+                        series: this.companySeries
+                    };
+                }, response => {
+                    this.toastr.error("Failed to generate map.");
+                }, () => {
+                });
+            }
+        }, response => {
+            this.toastr.error("Failed to generate map.");
+        }, () => {
+        });
+        this.companycompareForm.reset();
+    }
+    showCompany() {
+        console.log("show");
+        this.isShow = true;
+    }
+};
+CompareSectorComponent.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] },
+    { type: ngx_toastr__WEBPACK_IMPORTED_MODULE_4__["ToastrService"] },
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] }
+];
+CompareSectorComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-compare-sector',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./compare-sector.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/compare-sector/compare-sector.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./compare-sector.component.css */ "./src/app/compare-sector/compare-sector.component.css")).default]
+    })
+], CompareSectorComponent);
 
 
 
