@@ -23,7 +23,7 @@
     "bootstrap": "^4.4.1",
     "echarts": "^4.5.0",
     "file-saver": "^2.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng2-file-upload": "^1.4.0",
     "ngx-echarts": "^4.2.2",
     "ngx-toastr": "^11.2.1",
